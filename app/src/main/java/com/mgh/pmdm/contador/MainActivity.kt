@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Comentario commit
+
         // Referencia al TextView
         val textViewContador=findViewById<TextView>(R.id.textViewContador)
 
