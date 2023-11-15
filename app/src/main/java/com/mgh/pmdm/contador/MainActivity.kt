@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
+        val miDialogo = MiDialogFragment()
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         binding.reset.setOnClickListener {
             contador = 0
             binding.textViewContador.setText(contador.toString())
+            miDialogo.show(supportFragmentManager, "MiDialogo")
         }
 
 
